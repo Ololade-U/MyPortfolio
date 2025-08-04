@@ -30,7 +30,7 @@ const Landing = ({ color }: Prop) => {
         >
           <HStack
             justify={"space-between"}
-            p={{ mdDown: "1rem 1.2rem", mdTo2xl: "1rem 5rem" }}
+            p={{ mdDown: "1rem 1.2rem", mdTo2xl: "1rem 3.5rem" }}
             mb={".3rem"}
           >
             <Button
@@ -59,31 +59,34 @@ const Landing = ({ color }: Prop) => {
                 Uthman
               </Text>
             </Button>
-            <ColorModeButton />
-            <Button
-              _hover={{
-                _light: {
-                  color: "white",
-                  transform: "scale(1.07)",
-                },
-                _dark: {
-                  color: "black",
-                  transform: "scale(1.07)",
-                },
-              }}
-              transitionProperty={"transform, bgColor"}
-              transitionDuration={".5s"}
-              transitionTimingFunction={"linear"}
-              variant={{ _light: "outline", _dark: "solid" }}
-              bgColor={{ _light: "black", _dark: "white" }}
-              color={{ _light: "white", _dark: "black" }}
-              border={"1px solid black"}
-              p={{ mdDown: "1rem 1.4rem", mdTo2xl: "1.3rem 1.4rem" }}
-              textStyle={{ mdDown: "sm", mdTo2xl: "xl" }}
-              fontWeight={{ mdDown: "semibold", mdTo2xl: "semibold" }}
-            >
-              Contact me
-            </Button>
+            <Box>
+              <Button
+                _hover={{
+                  _light: {
+                    color: "white",
+                    transform: "scale(1.07)",
+                  },
+                  _dark: {
+                    color: "black",
+                    transform: "scale(1.07)",
+                  },
+                }}
+                transitionProperty={"transform, bgColor"}
+                transitionDuration={".5s"}
+                transitionTimingFunction={"linear"}
+                variant={{ _light: "outline", _dark: "solid" }}
+                bgColor={{ _light: "black", _dark: "white" }}
+                color={{ _light: "white", _dark: "black" }}
+                border={"1px solid black"}
+                p={{ mdDown: "1rem 1.4rem", mdTo2xl: "1.3rem 1.4rem" }}
+                textStyle={{ mdDown: "sm", mdTo2xl: "xl" }}
+                fontWeight={{ mdDown: "semibold", mdTo2xl: "semibold" }}
+                mr={'1rem'}
+              >
+                Contact me
+              </Button>
+              <ColorModeButton />
+            </Box>
           </HStack>
           <hr />
         </Box>
