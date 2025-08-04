@@ -10,3 +10,29 @@
 .form-control{
   border: 2px solid black;
 }
+
+
+@keyframes drop {
+  100% {
+    top : 0
+  }
+}
+@keyframes up {
+  100%{
+    top: 0;
+  }
+}
+
+@keyframes contactUp {
+  100%{
+    margin-top: 0;
+  }
+}
+
+@keyframes appear {
+  100%{
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+}

@@ -14,15 +14,34 @@ import { FaPhone } from "react-icons/fa6";
 import { BiMessageRounded } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
 import type { Prop } from "./Landing";
+import { useObserve } from "./hooks/Observe";
 
 const Contact = ({ color }: Prop) => {
+  const { componentRef, isInView } = useObserve();
   return (
     <>
-      <Box bgColor={{_light : '#fbfbfbff'}}>
+      <Box
+        ref={componentRef}
+        position={"relative"}
+        top={100}
+        bgColor={{ _light: "#fbfbfbff" }}
+        data-state={isInView ? "open" : "close"}
+        _open={{
+          animation: "up 1s ease-out",
+          animationFillMode: "forwards",
+        }}
+      >
         <Heading
           size={{ mdTo2xl: "4xl", mdDown: "3xl" }}
           mb={"3rem"}
           textAlign={"center"}
+          data-state={isInView ? "open" : "close"}
+          opacity={0}
+          _open={{
+            animation: "appear 1s linear",
+            animationDelay: ".3s",
+            animationFillMode: "forwards",
+          }}
         >
           Get In Touch
         </Heading>
@@ -65,6 +84,17 @@ const Contact = ({ color }: Prop) => {
             borderRadius={"1rem"}
             p={"1.2rem 1.5rem"}
             border={"2px solid rgba(190, 190, 190, 1)"}
+            position={"relative"}
+            top={100}
+            opacity={0}
+            data-state={isInView ? "open" : "close"}
+            _open={{
+              animationName: "contactUp, appear",
+              animationDuration: "1s",
+              animationTimingFunction: "ease-out",
+              animationDelay: ".8s",
+              animationFillMode: "forwards",
+            }}
           >
             <Heading size={"3xl"} lineHeight={0.9}>
               Send a Message
