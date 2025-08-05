@@ -8,6 +8,7 @@ import { VscGithubAlt } from "react-icons/vsc";
 import { AiOutlinePython } from "react-icons/ai";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLogoNodejs } from "react-icons/io";
+import { TbBrandTypescript } from "react-icons/tb";
 import type { Prop } from "./Landing";
 import { useObserve } from "./hooks/Observe";
 
@@ -168,17 +169,17 @@ const TechStack = ({ color }: Prop) => {
                   borderRadius={".5rem"}
                   bgColor={"gray.100"}
                 >
-                  <VscGithubAlt color={color} size={"2rem"} />
+                  <TbBrandTypescript color={color} size={"2rem"} />
                 </Box>
                 <Stack lineHeight={"1"}>
                   <Text fontSize={"larger"} fontWeight={"bold"}>
-                    Git/GitHub
+                    TypeScript
                   </Text>
                   <Text
                     fontSize={"sm"}
                     color={{ _light: "rgba(47, 47, 47, 1)" }}
                   >
-                    Source Control
+                    Type annotations, Type safety
                   </Text>
                 </Stack>
               </Flex>
@@ -249,7 +250,27 @@ const TechStack = ({ color }: Prop) => {
                     fontSize={"sm"}
                     color={{ _light: "rgba(47, 47, 47, 1)" }}
                   >
-                    Dynamic Web Content
+                    Server-side development 
+                  </Text>
+                </Stack>
+              </Flex>
+              <Flex alignItems={"center"} gap={".8rem"}>
+                <Box
+                  padding={".2rem .2rem"}
+                  borderRadius={".5rem"}
+                  bgColor={"gray.100"}
+                >
+                  <VscGithubAlt color={color} size={"2rem"} />
+                </Box>
+                <Stack lineHeight={"1"}>
+                  <Text fontSize={"larger"} fontWeight={"bold"}>
+                    Git/GitHub
+                  </Text>
+                  <Text
+                    fontSize={"sm"}
+                    color={{ _light: "rgba(47, 47, 47, 1)" }}
+                  >
+                    Source Control
                   </Text>
                 </Stack>
               </Flex>

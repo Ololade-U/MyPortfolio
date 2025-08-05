@@ -4,12 +4,15 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
 import { ColorModeButton } from "./ui/color-mode";
 import { useObserve } from "./hooks/Observe";
+import {HashLink} from "react-router-hash-link"
+
 
 export interface Prop {
   color: string;
 }
 
 const Landing = ({ color }: Prop) => {
+
   const { componentRef, isInView } = useObserve();
   return (
     <>
@@ -60,31 +63,33 @@ const Landing = ({ color }: Prop) => {
               </Text>
             </Button>
             <Box>
-              <Button
-                _hover={{
-                  _light: {
-                    color: "white",
-                    transform: "scale(1.07)",
-                  },
-                  _dark: {
-                    color: "black",
-                    transform: "scale(1.07)",
-                  },
-                }}
-                transitionProperty={"transform, bgColor"}
-                transitionDuration={".5s"}
-                transitionTimingFunction={"linear"}
-                variant={{ _light: "outline", _dark: "solid" }}
-                bgColor={{ _light: "black", _dark: "white" }}
-                color={{ _light: "white", _dark: "black" }}
-                border={"1px solid black"}
-                p={{ mdDown: "1rem 1.4rem", mdTo2xl: "1.3rem 1.4rem" }}
-                textStyle={{ mdDown: "sm", mdTo2xl: "xl" }}
-                fontWeight={{ mdDown: "semibold", mdTo2xl: "semibold" }}
-                mr={'1rem'}
-              >
-                Contact me
-              </Button>
+                <HashLink to={'#hash-target'} smooth>
+                  <Button
+                  _hover={{
+                    _light: {
+                      color: "white",
+                      transform: "scale(1.07)",
+                    },
+                    _dark: {
+                      color: "black",
+                      transform: "scale(1.07)",
+                    },
+                  }}
+                  transitionProperty={"transform, bgColor"}
+                  transitionDuration={".5s"}
+                  transitionTimingFunction={"linear"}
+                  variant={{ _light: "outline", _dark: "solid" }}
+                  bgColor={{ _light: "black", _dark: "white" }}
+                  color={{ _light: "white", _dark: "black" }}
+                  border={"1px solid black"}
+                  p={{ mdDown: "1rem 1.4rem", mdTo2xl: "1.3rem 1.4rem" }}
+                  textStyle={{ mdDown: "sm", mdTo2xl: "xl" }}
+                  fontWeight={{ mdDown: "semibold", mdTo2xl: "semibold" }}
+                  mr={"1rem"}
+                >
+                  Contact me
+                </Button>
+                </HashLink>
               <ColorModeButton />
             </Box>
           </HStack>
@@ -170,9 +175,18 @@ const Landing = ({ color }: Prop) => {
                 animationFillMode: "forwards",
               }}
             >
-              <VscGithubAlt color={color} size={"1.6rem"} />
-              <FaLinkedinIn color={color} size={"1.6rem"} />
-              <CiTwitter color={color} size={"1.6rem"} />
+              <a href="https://github.com/Ololade-U/MyPortfolio.git">
+                <VscGithubAlt color={color} size={"1.6rem"} />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/adebayo-uthman-38aaa1266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              >
+                <FaLinkedinIn color={color} size={"1.6rem"} />
+              </a>
+              <a href="https://x.com/trb_adebayo?s=21">
+                <CiTwitter color={color} size={"1.6rem"} />
+              </a>
             </HStack>
           </Stack>
         </Box>

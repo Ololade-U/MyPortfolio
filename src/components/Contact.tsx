@@ -15,11 +15,15 @@ import { CiLocationOn } from "react-icons/ci";
 import type { Prop } from "./Landing";
 import { useObserve } from "./hooks/Observe";
 
-const Contact = ({ color }: Prop) => {
+
+
+
+const Contact = ({color }: Prop) => {
   const { componentRef, isInView } = useObserve();
   return (
     <>
       <Box
+      id="hash-target"
         ref={componentRef}
         position={"relative"}
         top={100}
@@ -106,41 +110,45 @@ const Contact = ({ color }: Prop) => {
             >
               I'll get back to you as soon as possible
             </Text>
-            <Field.Root>
-              <Input
-                color={color}
-                pl={"1rem"}
-                placeholder="Your name (optional)"
-              />
-            </Field.Root>
-            <Field.Root>
-              <Input color={color} pl={"1rem"} placeholder="Your Email" />
-            </Field.Root>
-            <Field.Root>
-              <Textarea
-                color={color}
-                p={".5rem 1rem"}
-                rows={5}
-                placeholder="Your message"
-              />
-            </Field.Root>
-            <Field.Root mt={".5rem"}>
-              <Input
-                type="submit"
-                fontWeight={"bold"}
-                value={"Send Message"}
-                textAlign={"center"}
-                color={"white"}
-                bgColor={"black"}
-                _hover={{
-                  opacity: ".9",
-                  transform: "scale(1.04)",
-                }}
-                transitionProperty={"transform, bgColor"}
-                transitionDuration={".3s"}
-                transitionTimingFunction={"linear"}
-              />
-            </Field.Root>
+            <form action={"https://formsubmit.co/uthmanadebayo852@gmail.com" } method="POST">
+              <Field.Root mb={'.5rem'}>
+                <Input
+                  color={color}
+                  pl={"1rem"}
+                  placeholder="Your name (optional)"
+                  name="Name"
+                />
+              </Field.Root>
+              <Field.Root mb={'.5rem'}>
+                <Input name="info" color={color} pl={"1rem"} placeholder="Your Email" />
+              </Field.Root>
+              <Field.Root>
+                <Textarea
+                  color={color}
+                  p={".5rem 1rem"}
+                  rows={5}
+                  placeholder="Your message"
+                  name="Message"
+                />
+              </Field.Root>
+              <Field.Root>
+                <Input
+                  type="submit"
+                  fontWeight={"bold"}
+                  value={"Send Message"}
+                  textAlign={"center"}
+                  color={"white"}
+                  bgColor={"black"}
+                  _hover={{
+                    opacity: ".9",
+                    transform: "scale(1.04)",
+                  }}
+                  transitionProperty={"transform, bgColor"}
+                  transitionDuration={".3s"}
+                  transitionTimingFunction={"linear"}
+                />
+              </Field.Root>
+            </form>
           </Stack>
         </Box>
       </Box>
