@@ -175,7 +175,7 @@ const Landing = ({ color }: Prop) => {
                 animationFillMode: "forwards",
               }}
             >
-              <a href="https://github.com/Ololade-U/MyPortfolio.git">
+              <a target="_blank" href="https://github.com/Ololade-U/MyPortfolio.git">
                 <VscGithubAlt color={color} size={"1.6rem"} />
               </a>
               <a
@@ -184,7 +184,7 @@ const Landing = ({ color }: Prop) => {
               >
                 <FaLinkedinIn color={color} size={"1.6rem"} />
               </a>
-              <a href="https://x.com/trb_adebayo?s=21">
+              <a target="_blank" href="https://x.com/trb_adebayo?s=21">
                 <CiTwitter color={color} size={"1.6rem"} />
               </a>
             </HStack>
