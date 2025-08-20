@@ -17,6 +17,7 @@ const Projects = () => {
         top={100}
         my={"1.5rem"}
         justifyContent={"center"}
+        alignItems={{mdDown : 'center'}}
         flexDirection={{ mdDown: "column" }}
         data-state={isInView ? "open" : "close"}
         _open={{
@@ -26,7 +27,7 @@ const Projects = () => {
       >
         <Box
           py={"1rem"}
-          w={{ lgDown: "75%", lgTo2xl: "40%" }}
+          w={{ smDown : '85%', lgDown: "75%", lgTo2xl: "40%" }}
           borderRadius={"1rem"}
           border={{
             _dark: "1.5px solid #f3f3f3ff",
@@ -62,8 +63,8 @@ const Projects = () => {
               display={"inline"}
               alignSelf={"flex-start"}
               fontWeight={"bold"}
-              fontSize={"sm"}
-              border={"1px solid black"}
+              fontSize={{smTo2xl : "sm", smDown : 'x-small'}}
+              border={{_light : "1px solid black", _dark : '1px solid #e3e3e3'}}
             >
               Movie Recommendation Website
             </Text>
@@ -75,10 +76,11 @@ const Projects = () => {
               movies and series update and also allows you filter by genre,
               search and fan rating.
             </Text>
-            <Flex gap={"1rem"} my={".3rem"}>
+            <Flex alignItems={'center'} justifyContent={{smDown : 'space-between'}} gap={{smTo2xl : "1rem"}} my={".3rem"}>
               <Text
-                opacity={".7"}
-                fontSize={"sm"}
+                opacity={{_light : ".7"}}
+                color={{_dark:'black'}}
+                fontSize={{smTo2xl : "sm", smDown : 'x-small'}}
                 fontWeight={"bold"}
                 bgColor={"#ebebebff"}
                 p={".2rem .7rem"}
@@ -87,8 +89,9 @@ const Projects = () => {
                 React
               </Text>
               <Text
-                opacity={".7"}
-                fontSize={"sm"}
+              color={{_dark:'black'}}
+                opacity={{_light : ".7"}}
+                fontSize={{smTo2xl : "sm", smDown : 'x-small'}}
                 fontWeight={"bold"}
                 bgColor={"#ebebebff"}
                 p={".2rem .7rem"}
@@ -97,8 +100,9 @@ const Projects = () => {
                 Chakra UI
               </Text>
               <Text
-                opacity={".7"}
-                fontSize={"sm"}
+                opacity={{_light : ".7"}}
+                color={{_dark:'black'}}
+                fontSize={{smTo2xl : "sm", smDown : 'x-small'}}
                 fontWeight={"bold"}
                 bgColor={"#ebebebff"}
                 p={".2rem .7rem"}
