@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { ColorModeProvider, useColorMode } from "./components/ui/color-mode";
+import Projects from "./components/Projects";
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             <About />
             <TechStack color={colorMode === "dark" ? "black" : ""} />
             <Experience />
+            <Projects/>
             <Contact color={colorMode === "dark" ? "white" : ""} />
             <Footer
               color={colorMode === "light" ? "rgba(103, 105, 109, 1)" : "white"}
