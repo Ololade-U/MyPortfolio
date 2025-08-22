@@ -76,7 +76,7 @@ const Projects = () => {
               movies and series update and also allows you filter by genre,
               search and fan rating.
             </Text>
-            <Flex flexWrap={'wrap'} alignItems={'center'} justifyContent={{smDown : 'space-between'}} gap={{smTo2xl : "1rem"}} my={".3rem"}>
+            <Flex flexWrap={'wrap'} alignItems={'center'} gap={'.4rem'} my={".3rem"}>
               <Text
                 opacity={{_light : ".7"}}
                 color={{_dark:'black'}}
