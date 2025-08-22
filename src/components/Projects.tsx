@@ -76,7 +76,7 @@ const Projects = () => {
               movies and series update and also allows you filter by genre,
               search and fan rating.
             </Text>
-            <Flex alignItems={'center'} justifyContent={{smDown : 'space-between'}} gap={{smTo2xl : "1rem"}} my={".3rem"}>
+            <Flex flexWrap={'wrap'} alignItems={'center'} justifyContent={{smDown : 'space-between'}} gap={{smTo2xl : "1rem"}} my={".3rem"}>
               <Text
                 opacity={{_light : ".7"}}
                 color={{_dark:'black'}}
@@ -87,6 +87,17 @@ const Projects = () => {
                 borderRadius={"1rem"}
               >
                 React
+              </Text>
+              <Text
+                opacity={{_light : ".7"}}
+                color={{_dark:'black'}}
+                fontSize={{smTo2xl : "sm", smDown : 'x-small'}}
+                fontWeight={"bold"}
+                bgColor={"#ebebebff"}
+                p={".2rem .7rem"}
+                borderRadius={"1rem"}
+              >
+                Typescript
               </Text>
               <Text
               color={{_dark:'black'}}
@@ -109,6 +120,17 @@ const Projects = () => {
                 borderRadius={"1rem"}
               >
                 TMDB API
+              </Text>
+              <Text
+                opacity={{_light : ".7"}}
+                color={{_dark:'black'}}
+                fontSize={{smTo2xl : "sm", smDown : 'x-small'}}
+                fontWeight={"bold"}
+                bgColor={"#ebebebff"}
+                p={".2rem .7rem"}
+                borderRadius={"1rem"}
+              >
+                Zustand
               </Text>
             </Flex>
             <Flex gap={"1rem"} align={"center"} mt={"1rem"}>
