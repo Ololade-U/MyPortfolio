@@ -150,6 +150,7 @@ const Landing = ({ color }: Prop) => {
               high performance web applications that solve real business
               problems
             </Text>
+            <HashLink to={'#project-hash'} smooth>
             <Button
               // visibility={"hidden"}
               opacity={0}
@@ -164,6 +165,7 @@ const Landing = ({ color }: Prop) => {
             >
               View My Work
             </Button>
+            </HashLink>
             <HStack
               gap={"1.3rem"}
               mt={"1.5rem"}
@@ -175,7 +177,7 @@ const Landing = ({ color }: Prop) => {
                 animationFillMode: "forwards",
               }}
             >
-              <a target="_blank" href="https://github.com/Ololade-U/MyPortfolio.git">
+              <a target="_blank" href="https://github.com/Ololade-U">
                 <VscGithubAlt color={color} size={"1.6rem"} />
               </a>
               <a

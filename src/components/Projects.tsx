@@ -8,7 +8,7 @@ const Projects = () => {
   const { componentRef, isInView } = useObserve();
   return (
     <>
-      <Heading textAlign={"center"} size={{ mdTo2xl: "4xl", mdDown: "3xl" }}>
+      <Heading id="project-hash" textAlign={"center"} size={{ mdTo2xl: "4xl", mdDown: "3xl" }}>
         Projects
       </Heading>
       <Flex
