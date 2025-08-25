@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import movie from "../assets/MovieXYZ - Google Chrome 8_20_2025 11_47_13 AM.png";
+import brick from '../assets/Screenshot (1).png'
 import { IoLink } from "react-icons/io5";
 import { VscGithubAlt } from "react-icons/vsc";
 import { useObserve } from "./hooks/Observe";
@@ -8,15 +9,16 @@ const Projects = () => {
   const { componentRef, isInView } = useObserve();
   return (
     <>
-      <Heading id="project-hash" textAlign={"center"} size={{ mdTo2xl: "4xl", mdDown: "3xl" }}>
+      <Heading id="project-hash" mb={"1.5rem"} textAlign={"center"} size={{ mdTo2xl: "4xl", mdDown: "3xl" }}>
         Projects
       </Heading>
       <Flex
         ref={componentRef}
         position={"relative"}
         top={100}
-        my={"1.5rem"}
+        mb={"3rem"}
         justifyContent={"center"}
+        gap={'2rem'}
         alignItems={{mdDown : 'center'}}
         flexDirection={{ mdDown: "column" }}
         data-state={isInView ? "open" : "close"}
@@ -143,7 +145,91 @@ const Projects = () => {
             </Flex>
           </Stack>
         </Box>
+        <Box
+          py={"1rem"}
+          w={{ smDown : '85%', lgDown: "75%", lgTo2xl: "40%" }}
+          borderRadius={"1rem"}
+          border={{
+            _dark: "1.5px solid #f3f3f3ff",
+            _light: "1.5px solid #e3e3e3",
+          }}
+          _hover={{
+            _dark: {
+              transform: "scale(1.03)",
+              border: "1.5px solid #b8b6b6ff",
+            },
+            _light: {
+              transform: "scale(1.03)",
+              border: "1.5px solid black",
+            },
+          }}
+          transitionProperty={"transorm border"}
+          transitionDuration={".3s"}
+        >
+          <Image border={"none"} src={brick} mb={"1.5rem"} />
+          <Stack
+            px={"1rem"}
+            data-state={isInView ? "open" : "close"}
+            opacity={0}
+            _open={{
+              animation: "appear 1s linear",
+              animationDelay: ".3s",
+              animationFillMode: "forwards",
+            }}
+          >
+            <Text
+              px={".5rem"}
+              borderRadius={"2rem"}
+              display={"inline"}
+              alignSelf={"flex-start"}
+              fontWeight={"bold"}
+              fontSize={{smTo2xl : "sm", smDown : 'x-small'}}
+              border={{_light : "1px solid black", _dark : '1px solid #e3e3e3'}}
+            >
+              Brick Breaker Game
+            </Text>
+            <Heading fontSize={"2xl"} fontWeight={"bold"}>
+              Brick Breaker
+            </Heading>
+            <Text>
+             Fun and games.
+            </Text>
+            <Flex flexWrap={'wrap'} alignItems={'center'} gap={'.4rem'} my={".3rem"}>
+              <Text
+                opacity={{_light : ".7"}}
+                color={{_dark:'black'}}
+                fontSize={{smTo2xl : "sm", smDown : 'x-small'}}
+                fontWeight={"bold"}
+                bgColor={"#ebebebff"}
+                p={".2rem .7rem"}
+                borderRadius={"1rem"}
+              >
+                HTML Canvas 5
+              </Text>
+              <Text
+                opacity={{_light : ".7"}}
+                color={{_dark:'black'}}
+                fontSize={{smTo2xl : "sm", smDown : 'x-small'}}
+                fontWeight={"bold"}
+                bgColor={"#ebebebff"}
+                p={".2rem .7rem"}
+                borderRadius={"1rem"}
+              >
+                Javascript
+              </Text>
+            </Flex>
+            <Flex gap={"1rem"} align={"center"} mt={"1rem"}>
+              <a href="https://brick-breakerapp.netlify.app/" target="_blank">
+                <IoLink size={"1.8rem"} />
+              </a>
+              <a href="https://github.com/Ololade-U/Brick-breaker" target="_blank">
+                <VscGithubAlt size={"1.8rem"} />
+              </a>
+            </Flex>
+          </Stack>
+        </Box>
       </Flex>
+    
     </>
   );
 };
