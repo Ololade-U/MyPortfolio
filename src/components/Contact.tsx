@@ -105,7 +105,7 @@ const Contact = ({color }: Prop) => {
             <Text
               mb={"2rem"}
               fontSize={"sm"}
-              lineHeight={0.9}
+              lineHeight={1}
               color={{ _light: "rgba(47, 47, 47, 1)" }}
             >
               I'll get back to you as soon as possible
@@ -126,6 +126,7 @@ const Contact = ({color }: Prop) => {
                 <Textarea
                   color={color}
                   p={".5rem 1rem"}
+                  mb={'.5rem'}
                   rows={5}
                   placeholder="Your message"
                   name="Message"
@@ -137,8 +138,8 @@ const Contact = ({color }: Prop) => {
                   fontWeight={"bold"}
                   value={"Send Message"}
                   textAlign={"center"}
-                  color={"white"}
-                  bgColor={"black"}
+                  color={{_light : "white", _dark : 'black'}}
+                  bgColor={{_light : "black", _dark : 'white'}}
                   _hover={{
                     opacity: ".9",
                     transform: "scale(1.04)",
