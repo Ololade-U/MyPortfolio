@@ -120,7 +120,7 @@ const Contact = ({color }: Prop) => {
                 />
               </Field.Root>
               <Field.Root mb={'.5rem'}>
-                <Input name="info" color={color} pl={"1rem"} placeholder="Your Email" />
+                <Input required name="info" color={color} pl={"1rem"} placeholder="Your Email" />
               </Field.Root>
               <Field.Root>
                 <Textarea
@@ -130,6 +130,7 @@ const Contact = ({color }: Prop) => {
                   rows={5}
                   placeholder="Your message"
                   name="Message"
+                  required
                 />
               </Field.Root>
               <Field.Root>
