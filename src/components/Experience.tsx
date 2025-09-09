@@ -47,6 +47,23 @@ const Experience = () => {
             <Flex w={"100%"} direction={"column"} gap={"2rem"} my={"2rem"}>
               <Box>
                 <Heading color={{ _light: "blue" }} fontSize={"2xl"}>
+                  Arravo Technologies
+                </Heading>
+                <Separator w={"100%"} />
+                <Heading fontSize={"lg"} color={"rgba(125, 124, 124, 1)"}>
+                  Fullstack Intern
+                </Heading>
+                <Text color={"rgba(125, 124, 124, 1)"}>
+                  Aug 2025 - present
+                </Text>
+              </Box>
+              <Box>
+                Arravo a leading  global systems integrator and managed services provider with a wide footprint of operations in Africa. I work hand in hand with software engineers to bring imaginations to life via code.
+              </Box>
+            </Flex>
+            <Flex w={"100%"} direction={"column"} gap={"2rem"} my={"2rem"}>
+              <Box>
+                <Heading color={{ _light: "blue" }} fontSize={"2xl"}>
                   Aptech Education
                 </Heading>
                 <Separator w={"100%"} />
@@ -161,6 +178,18 @@ const Experience = () => {
           >
             <Box>
               <Heading color={{ _light: "blue" }} fontSize={"2xl"}>
+                Arravo Technologies
+              </Heading>
+              <Separator w={"100%"} />
+              <Heading fontSize={"lg"} color={"rgba(125, 124, 124, 1)"}>
+                Fullstack Intern
+              </Heading>
+              <Text color={"rgba(125, 124, 124, 1)"}>
+                Aug 2025 - present
+              </Text>
+            </Box>
+            <Box>
+              <Heading color={{ _light: "blue" }} fontSize={"2xl"}>
                 Aptech Education
               </Heading>
               <Separator w={"100%"} />
@@ -207,6 +236,9 @@ const Experience = () => {
             px={{ lgTo2xl: "2rem 10rem", lgDown: "2rem 6rem" }}
           >
             <Box>
+              Arravo a leading  global systems integrator and managed services provider with a wide footprint of operations in Africa. I work hand in hand with software engineers to bring imaginations to life via code.
+            </Box>
+            <Box pt={'1rem'}>
               Aptech Education is a multinational education-based organization
               that provides expert IT training and real-world skills to students
               accross the globe. Delivered Python, html, css and react lectures
