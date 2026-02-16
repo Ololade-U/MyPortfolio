@@ -47,11 +47,11 @@ const Experience = () => {
             <Flex w={"100%"} direction={"column"} gap={"2rem"} my={"2rem"}>
               <Box>
                 <Heading color={{ _light: "blue" }} fontSize={"2xl"}>
-                  Arravo Technologies
+                  Arravo Technology Ltd.
                 </Heading>
                 <Separator w={"100%"} />
                 <Heading fontSize={"lg"} color={"rgba(125, 124, 124, 1)"}>
-                  Fullstack Intern
+                  Frontend Dev and Asst. Project Manager
                 </Heading>
                 <Text color={"rgba(125, 124, 124, 1)"}>Aug 2025 - present</Text>
               </Box>
@@ -59,7 +59,26 @@ const Experience = () => {
                 Arravo a leading global systems integrator and managed services
                 provider with a wide footprint of operations in Africa. I work
                 hand in hand with software engineers to bring imaginations to
-                life via code.
+                life via code while also managing projects, preparing reports
+                and ensuring timely delivery of projects.
+              </Box>
+            </Flex>
+            <Flex w={"100%"} direction={"column"} gap={"2rem"} my={"2rem"}>
+              <Box>
+                <Heading color={{ _light: "blue" }} fontSize={"2xl"}>
+                  Edupoint Ltd.
+                </Heading>
+                <Separator w={"100%"} />
+                <Heading fontSize={"lg"} color={"rgba(125, 124, 124, 1)"}>
+                  Lecturer
+                </Heading>
+                <Text color={"rgba(125, 124, 124, 1)"}>Jan 2026 - present</Text>
+              </Box>
+              <Box>
+                Delivered lectures to aspiring developers by delivering
+                comprehensive courses on Tech Foundations, covering critical
+                topics such as web architecture, computational logic, and
+                version control
               </Box>
             </Flex>
             <Flex w={"100%"} direction={"column"} gap={"2rem"} my={"2rem"}>
