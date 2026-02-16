@@ -11,6 +11,9 @@ import { IoLogoNodejs } from "react-icons/io";
 import { TbBrandTypescript } from "react-icons/tb";
 import type { Prop } from "./Landing";
 import { useObserve } from "./hooks/Observe";
+import { IoLogoVue } from "react-icons/io5";
+import { TbBrandOauth } from "react-icons/tb";
+import { SiCloudinary } from "react-icons/si";
 
 const TechStack = ({ color }: Prop) => {
   const { componentRef, isInView } = useObserve();
@@ -57,6 +60,7 @@ const TechStack = ({ color }: Prop) => {
         >
           <Box
             width={{ mdDown: "85%", mdTo2xl: "35%" }}
+            h={{ mdTo2xl: "100%" }}
             borderRadius={"1rem"}
             p={"1.2rem 1.5rem"}
             border={"2px solid rgba(190, 190, 190, 1)"}
@@ -74,6 +78,26 @@ const TechStack = ({ color }: Prop) => {
                 <Stack lineHeight={"1"}>
                   <Text fontSize={"larger"} fontWeight={"bold"}>
                     React Js
+                  </Text>
+                  <Text
+                    fontSize={"sm"}
+                    color={{ _light: "rgba(47, 47, 47, 1)" }}
+                  >
+                    UI Libary
+                  </Text>
+                </Stack>
+              </Flex>
+              <Flex alignItems={"center"} gap={".8rem"}>
+                <Box
+                  padding={".2rem .2rem"}
+                  borderRadius={".5rem"}
+                  bgColor={"gray.100"}
+                >
+                  <IoLogoVue color={color} size={"2rem"} />
+                </Box>
+                <Stack lineHeight={"1"}>
+                  <Text fontSize={"larger"} fontWeight={"bold"}>
+                    Vue Js
                   </Text>
                   <Text
                     fontSize={"sm"}
@@ -187,7 +211,7 @@ const TechStack = ({ color }: Prop) => {
           </Box>
           <Box
             width={{ mdDown: "85%", mdTo2xl: "35%" }}
-            h={{ mdTo2xl: "32.5rem" }}
+            h={{ mdTo2xl: "36.5rem" }}
             borderRadius={"1rem"}
             p={"1.2rem 1.5rem"}
             border={"2px solid rgba(190, 190, 190, 1)"}
@@ -250,7 +274,7 @@ const TechStack = ({ color }: Prop) => {
                     fontSize={"sm"}
                     color={{ _light: "rgba(47, 47, 47, 1)" }}
                   >
-                    Server-side development 
+                    Server-side development
                   </Text>
                 </Stack>
               </Flex>
@@ -271,6 +295,46 @@ const TechStack = ({ color }: Prop) => {
                     color={{ _light: "rgba(47, 47, 47, 1)" }}
                   >
                     Source Control
+                  </Text>
+                </Stack>
+              </Flex>
+              <Flex alignItems={"center"} gap={".8rem"}>
+                <Box
+                  padding={".2rem .2rem"}
+                  borderRadius={".5rem"}
+                  bgColor={"gray.100"}
+                >
+                  <TbBrandOauth color={color} size={"2rem"} />
+                </Box>
+                <Stack lineHeight={"1"}>
+                  <Text fontSize={"larger"} fontWeight={"bold"}>
+                    NextAuth
+                  </Text>
+                  <Text
+                    fontSize={"sm"}
+                    color={{ _light: "rgba(47, 47, 47, 1)" }}
+                  >
+                    Authentication
+                  </Text>
+                </Stack>
+              </Flex>
+              <Flex alignItems={"center"} gap={".8rem"}>
+                <Box
+                  padding={".2rem .2rem"}
+                  borderRadius={".5rem"}
+                  bgColor={"gray.100"}
+                >
+                  <SiCloudinary color={color} size={"2rem"} />
+                </Box>
+                <Stack lineHeight={"1"}>
+                  <Text fontSize={"larger"} fontWeight={"bold"}>
+                    Cloudinary
+                  </Text>
+                  <Text
+                    fontSize={"sm"}
+                    color={{ _light: "rgba(47, 47, 47, 1)" }}
+                  >
+                    Media management, Image optimization
                   </Text>
                 </Stack>
               </Flex>
