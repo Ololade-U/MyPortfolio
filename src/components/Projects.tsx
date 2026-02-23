@@ -385,7 +385,7 @@ const Projects = () => {
             </Flex>
             <Flex gap={"1rem"} align={"center"} mt={"1rem"}>
               <a
-                href="https://nitt-admin-dashboard-dev.onrender.com/"
+                href="https://nitt.gov.ng/"
                 target="_blank"
               >
                 <IoLink size={"1.8rem"} />
