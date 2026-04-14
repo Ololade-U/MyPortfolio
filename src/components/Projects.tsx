@@ -213,10 +213,10 @@ const Projects = () => {
               ))}
             </Flex>
             <Flex gap={"1rem"} align={"center"} mt={"1rem"}>
-              <a href="https://moviessxyz.netlify.app/" target="_blank">
+              <a href="https://local-line.netlify.app/" target="_blank">
                 <IoLink size={"1.8rem"} />
               </a>
-              <a href="https://github.com/Ololade-U/MovieXYZ" target="_blank">
+              <a href="https://github.com/Ololade-U/e-farm" target="_blank">
                 <VscGithubAlt size={"1.8rem"} />
               </a>
             </Flex>
